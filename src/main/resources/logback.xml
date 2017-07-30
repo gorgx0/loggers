@@ -1,0 +1,15 @@
+<configuration
+        debug="true" scan="true" scanPeriod="30 seconds">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender" packagingData="true">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d [%thread] %-5p %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="all">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
